@@ -6,7 +6,6 @@ function countdownTimer() {
     var nowDate = new Date();
     var period = endDate - nowDate;
 
-    console.log(endDate.getDay() + ":" + nowDate.getDay());
     if (new Date(endDate.toDateString()).getTime() == new Date(nowDate.toDateString()).getTime()) {
         title.innerHTML = "『" + document.getElementById("name").value + "』は本日です";
         document.getElementById('result').innerHTML = "";
